@@ -16,7 +16,14 @@ function createGrid(size) {
 }
 
 function setBackgroundColor(event) {
-    event.target.style.backgroundColor = "red";
+    const red = getRandomNumber(255);
+    const green = getRandomNumber(255);
+    const blue = getRandomNumber(255);
+    event.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+}
+
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * (max + 1));
 }
 
 function clearGrid() {
