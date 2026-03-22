@@ -20,4 +20,11 @@ body {
     width: 600px;
     background-color: antiquewhite;
     flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.square {
+    border: 1px solid black;
 }
