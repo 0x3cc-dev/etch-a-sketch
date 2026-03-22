@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+    font-family: "Bitcount Grid Double Ink", system-ui;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.main {
+    height: 600px;
+    width: 600px;
+    background-color: antiquewhite;
+    flex-shrink: 0;
+}
