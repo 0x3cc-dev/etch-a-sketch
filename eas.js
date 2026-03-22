@@ -20,6 +20,7 @@ function setBackgroundColor(event) {
     const green = getRandomNumber(255);
     const blue = getRandomNumber(255);
     event.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+    event.target.style.opacity = squareOpacity < 1 ? `${squareOpacity += 0.1}` : `${squareOpacity}`;
 }
 
 function getRandomNumber(max) {
@@ -34,8 +35,11 @@ function clearGrid() {
     squares.forEach((square) => {
         square.remove();
     });
+
+    squareOpacity = 0;
 }
 
+let squareOpacity = 0;
 createGrid(16);
 
 const button = document.querySelector(".resize-button");
