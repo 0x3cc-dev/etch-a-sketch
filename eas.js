@@ -36,6 +36,8 @@ function clearGrid() {
     });
 }
 
+createGrid(16);
+
 const button = document.querySelector(".resize-button");
 button.addEventListener("click", () => {
     let newSize;
