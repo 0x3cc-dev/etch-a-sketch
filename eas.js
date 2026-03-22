@@ -11,9 +11,18 @@ function createGrid(size) {
 
         main.appendChild(square);
     }
+
+    main.addEventListener("mouseover", setBackgroundColor);
+}
+
+function setBackgroundColor(event) {
+    event.target.style.backgroundColor = "red";
 }
 
 function clearGrid() {
+    const main = document.querySelector(".main");
+    main.removeEventListener("mouseover", setBackgroundColor);
+
     const squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
         square.remove();
