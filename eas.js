@@ -28,3 +28,15 @@ function clearGrid() {
         square.remove();
     });
 }
+
+const button = document.querySelector(".resize-button");
+button.addEventListener("click", () => {
+    let newSize;
+
+    while (!Number.isInteger(newSize) || newSize < 16 || newSize > 100) {
+        newSize = parseInt(prompt("Choose a new size between 16 and 100.", 16));
+    }
+
+    clearGrid();
+    createGrid(newSize);
+});

@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 36px;
+    gap: 24px;
 }
 
 .main {
@@ -27,4 +27,8 @@ body {
 
 .square {
     border: 1px solid black;
+}
+
+.resize-button {
+    padding: 8px;
 }
