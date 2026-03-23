@@ -20,7 +20,7 @@ function setBackgroundColor(event) {
     const green = getRandomNumber(255);
     const blue = getRandomNumber(255);
     event.target.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
-    event.target.style.opacity = squareOpacity < 1 ? `${squareOpacity += 0.1}` : `${squareOpacity}`;
+    event.target.style.opacity = squareOpacity < 100 ? `${squareOpacity += 10}%` : "100%";
 }
 
 function getRandomNumber(max) {
